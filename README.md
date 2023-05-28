@@ -1,11 +1,11 @@
 
-# UInstaller
+# FustDownloader
 
 U can install the required SW AUTOMATICALLY by following these steps:
 
 ```bash
-git clone https://github.com/DeakUchir/UInstaller
-cd UInstaller
+git clone https://github.com/GlonSlon/FustDownloader
+cd FustDownloader
 ```
 Now fill the prutA with what u need(UInstaller.cpp):
 
