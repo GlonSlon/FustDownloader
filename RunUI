@@ -1,0 +1,20 @@
+#!/bin/bash
+
+apt-get update
+apt-get upgrade -y
+
+apt-get install gcc g++
+
+g++ -E UInstaller.cpp -o UInstallerPREPROC.ii
+g++ -S UInstallerPREPROC.ii  -o UInstallerASM.s
+
+#cat UInstaller.s
+#or
+#cat UInstaller.s | grep "u line"
+
+grep -v "GCC: ("  UInstallerASM.s > temp && mv temp  UInstallerASM.s
+
+as  UInstallerASM.s -o UInstallerBIN.o
+g++ UInstallerBIN.o -o UInstaller
+
+
