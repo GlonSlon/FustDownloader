@@ -7,10 +7,10 @@ U can install the required SW AUTOMATICALLY by following these steps:
 git clone https://github.com/GlonSlon/FustDownloader
 cd FustDownloader
 ```
-Now fill the prutA with what u need(UInstaller.cpp):
+Now fill the prog.txt with what u need():
 
 ```c++
-std::string prutA[] = {"gcc","g++","clang","perl","lua5.4","python3","pip3","net-tools","iw","nmap","wireshark","git","dia","libimage-exiftool-perl"};
+prog.txt
 ```
 
 Run building the file and install u crap:
