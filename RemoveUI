@@ -3,3 +3,5 @@
 rm UInstallerASM.s UInstallerBIN.o UInstallerPREPROC.ii
 rm UInstaller
 rm RunUI
+rm UInstaller.cpp UInstaller.h
+rm prog.txt
